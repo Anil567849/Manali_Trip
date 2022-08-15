@@ -1,0 +1,211 @@
+
+
+:root{
+    --black_text : #1d2d35;
+    --bold_text_size : 1.2rem;
+    --header_bg : rgba(255,255,255,0.95);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+#header{
+    position: fixed;
+    top: 0;
+    z-index: 19000;
+    width: 100vw;
+    height: 10vh;
+    background-color:  var(--header_bg);
+} 
+
+#logo_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height: 2rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+#logo_text{
+    color: var(--black_text);
+    /* transition: all 0.2s ease; */
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navigation_div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 4rem; */
+}
+
+.navigation_div .nav_list{
+    list-style: none;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+
+
+
+.navigation_div .nav_list a{
+    color: var(--black_text);
+    /* transition: all 0.2s ease; */
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.navigation_div .nav_list a:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffe000;
+    text-decoration-thickness: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile view navigation start */
+#hamburger{
+    display: inline-block;
+    /* background-color: red; */
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 5px;
+}
+
+
+
+#hamburger img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#mySidenav .navigation_div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4rem;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:  var(--header_bg);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+  /* MEDIA QUERY  */
+
+  /* hamburger button  */
+  @media only screen and (min-width: 800px) {
+    #hamburger{
+        display: none;
+    }
+}
+    
+  @media only screen and (max-width: 800px) {
+
+    .hide{
+        display: none;
+    }
+}
+/* mobile view navigation end  */
+
+
+  @media only screen and (max-width: 320px) {
+    #logo{
+        height: 1.5rem;
+        width: 3rem;
+    }
+    #logo_text{
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
